@@ -1,0 +1,102 @@
+#banner{
+    margin-top: 0px;
+    position: relative;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+#c-slider{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+
+#slider{
+    display: flex;
+    width: 300%;
+    overflow: hidden;
+}
+
+#slider section{
+    width: 100%;
+}
+
+#slider img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#btn-prev, #btn-next{
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+#btn-prev:hover, #btn-next:hover{
+    background: rgba(255,255,255,1);
+
+}
+#btn-prev{
+    left: 10px;
+}
+#btn-next{
+    right: 10px;
+}
+/* #banner .redes{
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    width: 50px;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    background: red;
+    border-radius: 10px 0 0  10px;
+    display: none;
+} */
+
+#banner h2{
+    font-size: 26px;
+}
+
+#banner a:hover{
+    background: rgba(51,51,51,0.5);
+}
+
+@media (min-width:480px){
+    #banner{
+        height: auto;
+    }
+    #banner h2{
+        font-size: 40px;
+    }
+}
+@media (min-width:768px){
+    banner{
+        height: 400px;
+        margin-top: 0px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width:1024px){
+    #banner{
+        height: 550px;
+        margin-top: 0px;
+    }
+    
+}
